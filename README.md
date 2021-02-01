@@ -1,4 +1,5 @@
 №1 и №2 - файлы: table.html, table_style.css, script.js
+
 На HTML
 Нарисовать таблицу 3*4. Одна ячейка красный фон, одна синий шрифт курсивом
 На JavaScript
