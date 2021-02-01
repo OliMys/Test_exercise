@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font: 1em sans-serif; 
+  }
+.table {
+    width: 40%;
+    margin: auto; 
+    margin-top: 5%;
+    border-collapse: collapse;
+    border: .1em solid grey;
+}
+.table-cell {
+    width: 150em;
+    padding: 5%;
+    border: .1em solid grey;
+    text-align: center;
+}
+.fill {
+    background-color: rgb(250, 0, 0);
+    color: rgb(60, 60, 60);
+}
+.font {
+    font-style: italic;
+    color:blue;
+}
+.options {
+    width: 42%;
+    margin: auto;
+    margin-top: 2%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+.options span {
+    color:rgb(60, 60, 60);
+    text-align: center;
+    padding: 1%;
+}
+.options-color input {
+    width: 60%;
+    padding: 1%;
+}
+.options-number select {
+    width: 60%;
+    padding: 2%;    
+}
+.options-button {
+    width: 15%;
+    margin-top: 8.5%;
+}
+.button {
+    color: rgb(60, 60, 60);
+    padding: 5%;
+}

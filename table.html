@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="table_style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <table class="table" id="table">
+        <tr>
+            <td class="table-cell fill">1</td>
+            <td class="table-cell font">2</td>
+            <td class="table-cell fill">3</td>
+            <td class="table-cell font">4</td>
+        </tr>
+        <tr>
+            <td class="table-cell fill">5</td>
+            <td class="table-cell font">6</td>
+            <td class="table-cell fill">7</td>
+            <td class="table-cell font">8</td>
+        </tr>
+        <tr>
+            <td class="table-cell fill">9</td>
+            <td class="table-cell font">10</td>
+            <td class="table-cell fill">11</td>
+            <td class="table-cell font">12</td>
+        </tr>
+    </table>
+    <div class="options">
+        <span class="options-color">
+            <p>Выберите цвет ячейки</p>
+            <input type="color" list="colorList" id="colorChoice" value="#ff0000">
+            <datalist id="colorList">
+                <option value="#ff0000" label="Красный">
+                <option value="#0000ff" label="Синий">
+                <option value="#008000" label="Зелёный">
+                <option value="#ffff00" label="Желтый">
+            </datalist>
+        </span>
+        <span class="options-number">
+            <p>Выберите номер ячейки</p>
+            <select id="select" size="1">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </span>
+        <span class="options-button"><button id="button" class="button">Применить</button></span>     
+    </div>
+    
+</body>
+</html>
