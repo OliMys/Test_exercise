@@ -5,13 +5,12 @@ table_elems = '';
 table_elems += '<tr><th>ФИО</th><th>Дата рождения</th><th>Адрес электронной почты</th><th>Логин</th><th>Наименование региона, к которому принадлежит организация</th></tr>'
 all_collaborators = XQuery("collaborators");
 for(col in all_collaborators) {
-	col_doc = OpenDoc(UrlFromDocID(col.id));
-	col_doc_te = col_doc.TopElem;
+	
 	table_elems += '<tr>';
-	table_elems +=  '<td>' + col_doc_te.fullname  + '</td><td>' + col.birth_date + '</td><td>' + col.email + '</td><td>' + col.login + '</td><td>' + col.region_id + '</td>';
+	table_elems +=  '<td>' + col.fullname  + '</td><td>' + col.birth_date + '</td><td>' + col.email + '</td><td>' + col.login + '</td><td>' + col.region_id + '</td>';
 	table_elems += '</tr>';
 }
-col_amount = ArrayCount(XQuery(all_collaborators));
+
 Response.Write(table_elems);
 %>
 </table>
