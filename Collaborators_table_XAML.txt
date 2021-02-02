@@ -1,4 +1,4 @@
-<SPXMLScreen  Width="800">
+<SPXMLScreen  Width="1200">
 <Collection Name="TableCollaborators">
 <Data>
 <%
@@ -10,6 +10,7 @@ for(col in all_collabortors) {
 <Cell Id="birth_date" Value="<%=col.birth_date%>"/>
 <Cell Id="email" Value="<%=col.email%>"/>
 <Cell Id="login" Value="<%=col.login%>"/>
+<Cell Id="org" Value="<%=col.org_name%>"/>
 <Cell Id="region_id" Value="<%=col.region_id%>"/>
 </Row>
 <%
@@ -23,7 +24,8 @@ for(col in all_collabortors) {
   <DataGridColumn Title="Дата рождения" Value="birth_date" Width="100" />
   <DataGridColumn Title="Адрес электронной почты" Value="email" Width="200" />
   <DataGridColumn Title="Логин" Value="login" Width="100" />
-  <DataGridColumn Title="Наименование региона, к которому принадлежит организация" Value="region_id" Width="200" />
+  <DataGridColumn Title="Организация, к которой принадлежит сотрудник" Value="org" Width="300" />
+  <DataGridColumn Title="Регион, к которому принадлежит организация" Value="region_id" Width="300" />
 </DataGrid>
 
 </SPXMLScreen>
