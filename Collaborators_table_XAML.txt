@@ -1,14 +1,10 @@
 <SPXMLScreen  Width="800">
-
+<Collection Name="TableCollaborators">
+<Data>
 <%
 all_collabortors = XQuery("collaborators");
 for(col in all_collabortors) {
-col;
-}
 %>
-
-<Collection Name="TableCollaborators">
-<Data>
 <Row>
 <Cell Id="fullname" Value="<%=col.fullname%>"/>
 <Cell Id="birth_date" Value="<%=col.birth_date%>"/>
@@ -16,6 +12,9 @@ col;
 <Cell Id="login" Value="<%=col.login%>"/>
 <Cell Id="region_id" Value="<%=col.region_id%>"/>
 </Row>
+<%
+}
+%>
 </Data>
 </Collection>
 
