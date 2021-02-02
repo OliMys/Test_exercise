@@ -1,4 +1,4 @@
-<SPXMLScreen  Width="1200">
+<SPXMLScreen  Width="1150">
 <Collection Name="TableCollaborators">
 <Data>
 <%
@@ -21,11 +21,11 @@ for(col in all_collabortors) {
 
 <DataGrid Name="Grid1" Title="Список сотрудников" Source="{TableCollaborators}" Height="200" PageSize="5">
   <DataGridColumn Title="ФИО" Value="fullname" Width="200" />
-  <DataGridColumn Title="Дата рождения" Value="birth_date" Width="100" />
+  <DataGridColumn Title="Дата рождения" Value="birth_date" Width="150" />
   <DataGridColumn Title="Адрес электронной почты" Value="email" Width="200" />
   <DataGridColumn Title="Логин" Value="login" Width="100" />
-  <DataGridColumn Title="Организация, к которой принадлежит сотрудник" Value="org" Width="300" />
-  <DataGridColumn Title="Регион, к которому принадлежит организация" Value="region_id" Width="300" />
+  <DataGridColumn Title="Организация, к которой принадлежит сотрудник" Value="org" Width="250" />
+  <DataGridColumn Title="Регион, к которому принадлежит организация" Value="region_id" Width="250" />
 </DataGrid>
 
 </SPXMLScreen>
