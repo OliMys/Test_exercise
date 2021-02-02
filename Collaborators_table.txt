@@ -2,12 +2,12 @@
         <caption>Список сотрудников</caption>
 <%
 table_elems = '';
-table_elems += '<tr><th>ФИО</th><th>Дата рождения</th><th>Адрес электронной почты</th><th>Логин</th><th>Наименование региона, к которому принадлежит организация</th></tr>'
+table_elems += '<tr><th>ФИО</th><th>Дата рождения</th><th>Адрес электронной почты</th><th>Логин</th><th>Наименование организации, к которой принадлежит сотрудник</th><th>Наименование региона, к которому принадлежит организация</th></tr>'
 all_collaborators = XQuery("collaborators");
 for(col in all_collaborators) {
 	
 	table_elems += '<tr>';
-	table_elems +=  '<td>' + col.fullname  + '</td><td>' + col.birth_date + '</td><td>' + col.email + '</td><td>' + col.login + '</td><td>' + col.region_id + '</td>';
+	table_elems +=  '<td>' + col.fullname  + '</td><td>' + col.birth_date + '</td><td>' + col.email + '</td><td>' + col.login + '</td><td>' + col.org_name + '</td><td>' + col.region_id + '</td>';
 	table_elems += '</tr>';
 }
 
@@ -17,7 +17,7 @@ Response.Write(table_elems);
 <style>
 	.table  {border-collapse: collapse; border: .1em solid grey;}
 	.table caption {margin: 1%;}
-	.table td, th {width: 20%; padding: 1%; text-align: center; border: .1em solid grey;}
+	.table td, th {width: 15%; padding: 1%; text-align: center; border: .1em solid grey;}
 	.table th {background-color: #ccc;}
 	
 </style>
